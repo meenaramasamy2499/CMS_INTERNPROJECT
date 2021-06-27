@@ -1,0 +1,21 @@
+<h1>FEES DETAILS</h1>
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Course Id</th>
+                <th>Amount</th>
+                <th>Last Date for Payment</th>
+             
+            </tr>
+            <tr *ngFor="let f of feesdetails">
+              <th>{{f.StudentId}}</th>
+              <th>{{f.Amount}} INR</th>
+              <th>{{f.DateOfPayment}}</th>
+             
+            </tr>
+        </thead>
+    </table>
+</div>
+
+      

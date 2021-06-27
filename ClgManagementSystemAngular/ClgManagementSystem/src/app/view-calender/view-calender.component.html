@@ -1,0 +1,19 @@
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+          
+          
+                <th>Date</th>
+                <th>Status</th>
+                <th>Reason</th>
+            </tr>
+            <tr *ngFor="let c of calenders">
+             
+              <th>{{c.DateOfEdit}}</th>
+              <th>{{c.Status}}</th>
+              <th>{{c.Reason}}</th>
+            </tr>
+        </thead>
+    </table>
+</div>

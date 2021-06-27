@@ -1,0 +1,44 @@
+<form [formGroup]="attendance" class="form">
+  <div class="form-group col-md-4">
+    <label for="">Faculty Id</label>
+    <select name="Status" class="form-control" formControlName="FacultyId">
+      <option value="1">1</option>>
+      <option value="2">2</option>
+      <option value="3">3</option>>
+      <option value="4">4</option>>
+      <option value="5">5</option>>
+      <option value="6">6</option>>
+      <option value="7">7</option>>
+    </select>
+  </div><br>
+    
+    
+    <div class="form-group col-md-4">
+      <label for="">Student Id</label>
+      <select name="Status" class="form-control" formControlName="StudentId">
+        <option value="1">1</option>>
+        <option value="2">2</option>
+        <option value="3">3</option>>
+        <option value="4">4</option>>
+        <option value="5">5</option>>
+        <option value="6">6</option>>
+        <option value="7">7</option>>
+      </select>
+    </div><br>
+    
+    
+    <div class="form-group col-md-4" >
+      <label for="">Date</label>
+      <input type="date" name="Date" class="form-control" formControlName="AttendanceDate">
+    </div><br>
+  
+    <div class="form-group col-md-4">
+      <label for="">Present/Absent</label>
+      <select name="IsPresent" class="form-control" formControlName="IsPresent">
+        <option value="Present">Present</option>>
+        <option value="Absent">Absent</option>
+      </select>
+    </div><br>
+    
+    <button type="submit" (click)="addattendance()" class="btn btn-primary">add</button>
+    </form>

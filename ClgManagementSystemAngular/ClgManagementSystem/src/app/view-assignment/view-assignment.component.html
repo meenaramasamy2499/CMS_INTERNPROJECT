@@ -1,0 +1,26 @@
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Assignment Id</th>
+                <th>Student Id</th>
+                <th>Course Code</th>
+                
+                <th>Question</th>
+                <th>Last Date For Submission</th>
+             
+            </tr>
+            <tr *ngFor="let a of assignments">
+              <th>{{a.AssignmentId}}</th>
+              <th>{{a.StudentId}}</th>
+              <th>{{a.CourseCode}}</th>
+             
+              <th>{{a.Question}}</th>
+              <th>{{a.SubmissionTime}}</th>
+             
+            </tr>
+        </thead>
+    </table>
+</div>
+
+    

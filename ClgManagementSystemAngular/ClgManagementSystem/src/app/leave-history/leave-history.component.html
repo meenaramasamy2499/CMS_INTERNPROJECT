@@ -1,0 +1,23 @@
+<div>
+    <h1>Leave History of Students and Faculties</h1>
+</div>
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+              <th>Ref No</th>
+                <th>UserId</th>
+                <th>Date</th>
+      
+              
+            </tr>
+            <tr *ngFor="let l of leaves">
+              <th>{{l.LeaveDetailsId}}</th>
+              <th>{{l.UserId}}</th>
+              <th>{{l.DateOfLeave}}</th>
+       
+           
+            </tr>
+        </thead>
+    </table>
+</div>

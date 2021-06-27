@@ -1,0 +1,22 @@
+<form [formGroup]="issue">
+   
+    
+    
+    <div class="form-group col-md-4">
+      <label for="">Enter Your User Id</label>
+      <input type="number" name="UserId" class="form-control" formControlName="UserId">
+    </div><br>
+
+    <div class="form-group col-md-4">
+      <label for="">Description</label>
+      <select name="Status" class="form-control" formControlName="Description">
+        <option value="Assignment marks not updated">Assignment marks not updated</option>>
+        <option value="Fees Paid but not updated">Fees Paid but not updated</option>
+        <option value="Leave details not updated">Leave details not updated</option>
+        <option value="Login Id reset">Login Id reset</option>
+        <option value="App not Responding">App not Responding</option>
+      </select>
+    </div><br>
+    
+    <button type="submit" (click)="addissue()" class="btn btn-primary">add</button>
+    </form>

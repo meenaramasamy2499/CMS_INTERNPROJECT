@@ -1,0 +1,22 @@
+<h1>RAISED ISSUES</h1>
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+
+              <th>ticketNo</th>
+          
+                <th>User Id</th>
+                <th>Description</th>
+                
+            </tr>
+            <tr *ngFor="let isu of issues">
+              <th>{{isu.Ticket}}</th>
+
+              <th>{{isu.UserId}}</th>
+              <th>{{isu.Description}}</th>
+
+            </tr>
+        </thead>
+    </table>
+</div>

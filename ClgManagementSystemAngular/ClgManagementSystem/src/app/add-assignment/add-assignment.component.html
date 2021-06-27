@@ -1,0 +1,37 @@
+<form [formGroup]="assignment">
+    <div class="form-group col-md-4" >
+      <label for="">Assignment Id</label>
+      <input type="number" name="Assignment Id" class="form-control" formControlName="AssignmentId">
+    </div><br>
+
+    <div class="form-group col-md-4">
+      <label for="">Student Id</label>
+      <select name="Status" class="form-control" formControlName="StudentId">
+        <option value="1">1</option>>
+        <option value="2">2</option>
+        <option value="3">3</option>>
+        <option value="4">4</option>>
+        <option value="5">5</option>>
+        <option value="6">6</option>>
+        <option value="7">7</option>>
+      </select>
+    </div><br>
+
+    <div class="form-group col-md-4">
+      <label for="">Course Code</label>
+      <input type="number" name="CourseCode" class="form-control" formControlName="CourseCode">
+    </div><br>
+    
+    
+    <div class="form-group col-md-4">
+      <label for="">Last Date for Submission</label>
+      <input type="date" name="SubmissionTime" class="form-control" formControlName="SubmissionTime">
+    </div><br>
+
+    <div class="form-group col-md-4" >
+      <label for="">Question</label>
+      <input type="text" name="Question" class="form-control" formControlName="Question">
+    </div><br>
+    
+    <button type="submit" (click)="addassignment()" class="btn btn-primary">add</button>
+    </form>

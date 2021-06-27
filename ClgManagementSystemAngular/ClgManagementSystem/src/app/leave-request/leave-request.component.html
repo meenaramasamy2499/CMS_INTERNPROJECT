@@ -1,0 +1,20 @@
+<form [formGroup]="leave">
+
+    <div class="form-group col-md-4" >
+      <label for="">UserId</label>
+      <input type="number" name="UserId" class="form-control" formControlName="UserId">
+    </div><br>
+  
+    <div class="form-group col-md-4" >
+      <label for="">DateOfLeave</label>
+      <input type="date" name="DateOfLeave" class="form-control" formControlName="DateOfLeave">
+    </div><br>
+    
+     
+    <div class="form-group col-md-4">
+      <label for="">Reason</label>
+      <input type="text" name="Reason" class="form-control" formControlName="Reason">
+    </div><br>
+    
+    <button type="submit" (click)="addleave()" class="btn btn-primary">Request</button>
+    </form>

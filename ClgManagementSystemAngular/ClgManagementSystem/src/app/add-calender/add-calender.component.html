@@ -1,0 +1,21 @@
+<form [formGroup]="calender">
+    <div class="form-group col-md-4" >
+      <label for="">Date</label>
+      <input type="date" name="Date" class="form-control" formControlName="DateOfEdit">
+    </div><br>
+    
+    <div class="form-group col-md-4">
+      <label for="">Status</label>
+      <select name="Status" class="form-control" formControlName="Status">
+        <option value="Working Day">Working Day</option>>
+        <option value="HoliDay">Holiday</option>
+      </select>
+    </div><br>
+    
+    <div class="form-group col-md-4">
+      <label for="">Reason</label>
+      <input type="text" name="Reason" class="form-control" formControlName="Reason">
+    </div><br>
+    
+    <button type="submit" (click)="addcalender()" class="btn btn-primary">add</button>
+    </form>

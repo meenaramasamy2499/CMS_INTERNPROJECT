@@ -1,0 +1,19 @@
+<form [formGroup]="feesdetail">
+    <div class="form-group col-md-4" >
+      <label for="">Course Id</label>
+      <input type="number" name="Student Id" class="form-control" formControlName="StudentId">
+    </div><br>
+    
+    <div class="form-group col-md-4">
+      <label for="">Fees</label>
+      <input type="number" name="Fees" class="form-control" formControlName="Amount">
+    </div><br>
+    
+    
+    <div class="form-group col-md-4">
+      <label for="">Last Date for Payment</label>
+      <input type="date" name="DateOfPayment" class="form-control" formControlName="DateOfPayment">
+    </div><br>
+    
+    <button type="submit" (click)="addfeesdetails()" class="btn btn-primary">add</button>
+    </form>
